@@ -1,0 +1,24 @@
+|Q4
+clk => r_reg[0].CLK
+clk => r_reg[1].CLK
+clk => r_reg[2].CLK
+reset => r_reg[0].ACLR
+reset => r_reg[1].ACLR
+reset => r_reg[2].ACLR
+input[0] => Equal0.IN2
+input[0] => Equal1.IN0
+input[0] => Equal2.IN2
+input[0] => Equal3.IN2
+input[1] => Equal0.IN0
+input[1] => Equal1.IN2
+input[1] => Equal2.IN1
+input[1] => Equal3.IN1
+input[2] => Equal0.IN1
+input[2] => Equal1.IN1
+input[2] => Equal2.IN0
+input[2] => Equal3.IN0
+output[0] << r_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] << r_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] << r_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\installed program\Quartus II\quartus\bin\Altera_SRC\HW2Q4\simulation\modelsim
+Eq4
+Z1 w1686205681
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dF:\installed program\Quartus II\quartus\bin\Altera_SRC\HW2Q4\simulation\modelsim
+Z6 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/HW2Q4/Q4.vhd
+Z7 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/HW2Q4/Q4.vhd
+l0
+L5
+V;<HK9]<IM>QjYNJ8MKe4d0
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1686207320.140000
+Z10 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/HW2Q4/Q4.vhd|
+Z11 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/HW2Q4/Q4.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 >c7EVgd8;M2SR_cWfnzmJ1
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 2 q4 0 22 ;<HK9]<IM>QjYNJ8MKe4d0
+l15
+L13
+VNc^H23H>nD5JEU`EJKzeI2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 TG8TKSo]V1OS2:VHRXAZG2
+!i10b 1
+Etb_q4
+Z15 w1686207050
+R3
+R4
+R5
+Z16 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/HW2Q4/tb_Q4.vhd
+Z17 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/HW2Q4/tb_Q4.vhd
+l0
+L4
+VJH`nSNj;<VX?3ZM]j:k4b3
+!s100 cnE;=SAb66m41WVA<JR^[3
+R8
+31
+!i10b 1
+Z18 !s108 1686207320.423000
+Z19 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/HW2Q4/tb_Q4.vhd|
+Z20 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/HW2Q4/tb_Q4.vhd|
+R12
+R13
+Abehavioral
+R2
+R14
+R3
+R4
+DEx4 work 5 tb_q4 0 22 JH`nSNj;<VX?3ZM]j:k4b3
+l16
+L8
+VFY7_I`aHH7SUMIO3DSbdc2
+!s100 EOM8YfM;k1hMV^@ToW9YY3
+R8
+31
+!i10b 1
+R18
+R19
+R20
+R12
+R13

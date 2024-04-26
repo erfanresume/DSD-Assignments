@@ -1,0 +1,65 @@
+|Carry_look_ahead
+a[0] => PFA:PFA1.a
+a[1] => PFA:PFA2.a
+a[2] => PFA:PFA3.a
+a[3] => PFA:PFA4.a
+b[0] => PFA:PFA1.b
+b[1] => PFA:PFA2.b
+b[2] => PFA:PFA3.b
+b[3] => PFA:PFA4.b
+cin => c1.IN1
+cin => c2.IN1
+cin => c3.IN1
+cin => cout.IN1
+cin => PFA:PFA1.cin
+s[0] << PFA:PFA1.s
+s[1] << PFA:PFA2.s
+s[2] << PFA:PFA3.s
+s[3] << PFA:PFA4.s
+cout << cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_look_ahead|PFA:PFA1
+a => s.IN0
+a => g.IN0
+b => s.IN1
+b => g.IN1
+cin => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+p <= s.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_look_ahead|PFA:PFA2
+a => s.IN0
+a => g.IN0
+b => s.IN1
+b => g.IN1
+cin => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+p <= s.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_look_ahead|PFA:PFA3
+a => s.IN0
+a => g.IN0
+b => s.IN1
+b => g.IN1
+cin => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+p <= s.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_look_ahead|PFA:PFA4
+a => s.IN0
+a => g.IN0
+b => s.IN1
+b => g.IN1
+cin => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+p <= s.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+

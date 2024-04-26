@@ -1,0 +1,7 @@
+|TFlipFlop
+clk => r_reg.CLK
+reset => r_reg.ACLR
+t => r_reg.ENA
+q << r_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+

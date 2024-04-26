@@ -1,0 +1,21 @@
+|BCD
+clk => r_reg[0].CLK
+clk => r_reg[1].CLK
+clk => r_reg[2].CLK
+clk => r_reg[3].CLK
+reset => r_reg[0].ACLR
+reset => r_reg[1].ACLR
+reset => r_reg[2].ACLR
+reset => r_reg[3].ACLR
+dir => r_next.IN1
+dir => r_next[0].OUTPUTSELECT
+dir => r_next[1].OUTPUTSELECT
+dir => r_next[2].OUTPUTSELECT
+dir => r_next[3].OUTPUTSELECT
+dir => r_next.IN1
+output[0] << r_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] << r_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] << r_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] << r_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

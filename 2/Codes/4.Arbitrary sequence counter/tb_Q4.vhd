@@ -1,0 +1,65 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tb_Q4 is 
+end tb_Q4;
+
+  
+architecture behavioral of tb_Q4 is
+ 
+    signal tb_clk,tb_reset : std_logic:='0';
+    signal tb_input : std_logic_vector(2 downto 0);
+    signal tb_output : std_logic_vector(2 downto 0);
+    
+	 constant clk_period : time := 10 ns;
+
+  begin
+  
+        U1_Test: entity work.Q4(behavioral) port map(
+              clk => tb_clk, 
+              reset => tb_reset,
+              input => tb_input,
+              output => tb_output
+            );
+ 
+ clk_process :process
+		begin
+			tb_clk <= '0';
+			wait for clk_period/2; 
+			tb_clk <= '1';
+			wait for clk_period/2;
+		end process;
+	
+	
+ sim_proc: process   
+      begin
+		
+			tb_reset <= '0';
+			wait for 100 ns;
+
+         tb_input <= "000";
+			wait for 100 ns;
+			
+			tb_input <= "011";
+			wait for 100 ns;
+			
+			tb_input <= "110";
+			wait for 100 ns;
+			
+			tb_input <= "101";
+			wait for 100 ns;
+			
+			tb_input <= "111";
+			wait for 100 ns;
+			
+     end process;
+       
+end  behavioral;
+
+
+
+
+
+
+
+

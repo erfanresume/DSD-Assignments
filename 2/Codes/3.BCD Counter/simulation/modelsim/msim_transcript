@@ -1,0 +1,52 @@
+# Reading F:/installed program/Model Sim/modelsim_ase/tcl/vsim/pref.tcl 
+# do BCD_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying F:\installed program\Model Sim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied F:\installed program\Model Sim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/BCD Counter/BCD.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BCD
+# -- Compiling architecture behavioral of BCD
+# 
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/BCD Counter/tb_BCD.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_BCD
+# -- Compiling architecture behavioral of tb_BCD
+# -- Loading package NUMERIC_STD
+# -- Loading entity BCD
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb_BCD
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_BCD 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_bcd(behavioral)
+# Loading work.bcd(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_bcd/U1_Test
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 5 ns  Iteration: 2  Instance: /tb_bcd/U1_Test
+# Break key hit 
+# Break in Process clk_process at F:/installed program/Quartus II/quartus/bin/Altera_SRC/BCD Counter/tb_BCD.vhd line 30
