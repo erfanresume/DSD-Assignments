@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity z is  
+  
+  port( a,b,c,d : in std_logic;
+        z : out std_logic
+      );
+        
+end z;
+
+architecture behavioral of z is
+  begin
+    z <= ((a and b and c) or d ) xor not((b nor c) nand a);
+       
+end  behavioral;

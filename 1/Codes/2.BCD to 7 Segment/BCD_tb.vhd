@@ -1,0 +1,87 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity BCD_tb is
+end BCD_tb;
+
+architecture behavioral of BCD_tb is
+	
+	--Inputs
+	signal tb_clk: std_logic := '0';
+	signal tb_reset: std_logic := '0';
+	signal tb_en: std_logic_vector(3 downto 0);
+	signal tb_output: std_logic_vector(6 downto 0);
+	
+	-- Clock period definitions
+	constant clk_period : time := 10 ns;
+	
+-- Component Declaration
+--component BCD is
+--port(
+	--	clk: in std_logic;
+	--	reset: in std_logic;
+	--	d_in: in std_logic_vector(7 downto 0); -- input1
+	--	d_out: out std_logic_vector(7 downto 0)
+	--); -- output, 1 bit wider
+--end component;
+begin
+
+	U1_Test: entity work.BCD(behavioral) port map(
+              clk => tb_clk, 
+              reset => tb_reset,
+              en => tb_en,
+              output => tb_output
+            );
+				
+--	dut: regis port map(
+--	clk => clk,
+--	rst => rst,
+--	d_in => d_in,
+--	d_out => d_out);
+	
+	clk_process :process
+		begin
+			tb_clk <= '0';
+			wait for clk_period/2; 
+			tb_clk <= '1';
+			wait for clk_period/2;
+		end process;
+	
+	stim_process:process
+	begin    
+		
+		tb_reset <= '1';
+		wait for clk_period*10;
+		
+		tb_en <= "0000";
+		wait for 100 ns;
+		
+		tb_en <= "0001";
+		wait for 100 ns;
+		
+		tb_en <= "0010";
+		wait for 100 ns;
+		
+		tb_en <= "0011";
+		wait for 100 ns;
+		
+		tb_en <= "0100";
+		wait for 100 ns;
+		
+		tb_en <= "0101";
+		wait for 100 ns;
+		
+		tb_en <= "0110";
+		wait for 100 ns;
+		
+		tb_en <= "0111";
+		wait for 100 ns;
+		
+		tb_en <= "1000";
+		wait for 100 ns;
+		
+		tb_en <= "1001";
+		wait for 100 ns;
+	wait;
+end process;
+end behavioral;

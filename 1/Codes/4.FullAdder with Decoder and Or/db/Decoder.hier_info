@@ -1,0 +1,43 @@
+|FA
+X => Decoder:l1.input[2]
+Y => Decoder:l1.input[1]
+Cin => Decoder:l1.input[0]
+sum << sum.DB_MAX_OUTPUT_PORT_TYPE
+cout << cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA|Decoder:l1
+input[0] => Mux0.IN10
+input[0] => Mux1.IN10
+input[0] => Mux2.IN10
+input[0] => Mux3.IN10
+input[0] => Mux4.IN10
+input[0] => Mux5.IN10
+input[0] => Mux6.IN10
+input[0] => Mux7.IN10
+input[1] => Mux0.IN9
+input[1] => Mux1.IN9
+input[1] => Mux2.IN9
+input[1] => Mux3.IN9
+input[1] => Mux4.IN9
+input[1] => Mux5.IN9
+input[1] => Mux6.IN9
+input[1] => Mux7.IN9
+input[2] => Mux0.IN8
+input[2] => Mux1.IN8
+input[2] => Mux2.IN8
+input[2] => Mux3.IN8
+input[2] => Mux4.IN8
+input[2] => Mux5.IN8
+input[2] => Mux6.IN8
+input[2] => Mux7.IN8
+output[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

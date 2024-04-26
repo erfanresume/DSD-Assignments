@@ -1,0 +1,55 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Decoder is 
+ 
+  port( 
+        input : in std_logic_vector(2 downto 0);
+        output : out std_logic_vector(6 downto 0)
+      );
+end Decoder;
+
+architecture behavioral of Decoder is  
+begin
+    process(input)
+	 
+    begin
+	 
+      case input is
+        
+        when "000" => 
+          output <= "00000001";
+          
+        when "001" => 
+          output <= ALU_input1 or ALU_input2;
+          
+        when "010" => 
+          output <= std_logic_vector(unsigned(ALU_input1) + unsigned(ALU_input2));
+       
+        when "011" => --Sub
+          output <= std_logic_vector(unsigned(ALU_input1) - unsigned(ALU_input2));
+        
+        when "100" => --Set Less
+			 output
+			 
+        when "101" => --Logical Nor
+          output <= ALU_input1 nor ALU_input2;
+			 
+		  when "110" => --Logical Nor
+          output <= ALU_input1 nor ALU_input2;
+    
+        when others => null; --No Operation(we can define 10 more operation that we didn't)
+    
+    end case; 
+  end process; 
+  
+   --initialization resultX to ALU_result
+        ALU_result <= resultX;
+        zero <= '1' when resultX = x"00000000" else '0';
+          
+end  behavioral;
+
+
+
+
