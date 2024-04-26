@@ -1,0 +1,87 @@
+# Reading F:/installed program/Model Sim/modelsim_ase/tcl/vsim/pref.tcl 
+# do fifo_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying F:\installed program\Model Sim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied F:\installed program\Model Sim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/fifo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fifo
+# -- Compiling architecture behavioral of fifo
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/reg_file.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg_file
+# -- Compiling architecture behavioral of reg_file
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/controller.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controller
+# -- Compiling architecture behavioral of controller
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/andgate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity andgate
+# -- Compiling architecture behavioral of andgate
+# 
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/tb_fifo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_fifo
+# -- Compiling architecture behavioral of tb_fifo
+# ** Warning: [4] F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/tb_fifo.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb_fifo
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_fifo 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_fifo(behavioral)
+# Loading work.fifo(behavioral)
+# Loading work.controller(behavioral)
+# Loading work.andgate(behavioral)
+# Loading work.reg_file(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/utt/registerfile
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/utt/fifocontroller
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_fifo/utt/fifocontroller
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_fifo/utt/fifocontroller
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_fifo/utt/registerfile
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_fifo/utt/registerfile
+# Break key hit 
+# Break in Process clk_process at F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/tb_fifo.vhd line 61

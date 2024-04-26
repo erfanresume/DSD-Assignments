@@ -1,0 +1,143 @@
+library.iee;
+use ieee.std_logic_1164.all;
+
+--single port register
+entity reg_file is
+	port(
+			clk,reset,w_en: in std_logic;
+			w_address: in std_logic_vector(3 downto 0);
+			r_address: in std_logic_vector(3 downto 0);
+			w_data: in std_logic_vector(63 downto 0);
+			r_data: out std_logic_vector(63 downto 0);
+	);
+end entity;
+
+architecture behavioral of reg_file is
+
+type reg_file_type is array(15 downto 0) of (63 downto 0);
+	
+	signal r_reg,r_next: reg_file_type;
+	signal en: std_logic_vector(15 downto 0);
+begin
+	process(clk,reset)
+	begin
+		if (reset = '1') then 
+			r_reg <= (others => (others => '0'));
+		elsif (clk' event and clk = '1') then 
+			r_reg <= r_next;
+	end process;
+--next state logic
+	--decoder
+		process(w_address,w_en)
+		begin
+			if (w_en = '0') then
+				en <= others => '0';
+			else 
+				case w_address is
+					when "0000" => 
+						en <= x"01";
+					when "0001" => 
+						en <= x"02";
+					when "0010" => 
+						en <= x"03";
+					when "0011" => 
+						en <= x"04";
+					when "0100" => 
+						en <= x"05";
+					when "0101" => 
+						en <= x"06";
+					when "0110" => 
+						en <= x"07";
+					when "0111" => 
+						en <= x"08";
+					when "1000" => 
+						en <= x"10";
+					when "1001" => 
+						en <= x"20";
+					when "1010" => 
+						en <= x"30";
+					when "1011" => 
+						en <= x"40";
+					when "1100" => 
+						en <= x"50";
+					when "1101" => 
+						en <= x"60";
+					when "1110" => 
+						en <= x"70";
+					when "1111" => 
+						en <= x"80";
+				end case;	
+		end process;
+	--enable 
+		process(r_reg,en,w_data)
+		begin
+			r_reg <= r_next;
+			if en(15) = '1' then
+				r_next(15) <= w_data;
+			end if;
+			if en(14) = '1' then
+				r_next(14) <= w_data;
+			end if;
+			if en(13) = '1' then
+				r_next(13) <= w_data;
+			end if;
+			if en(12) = '1' then
+				r_next(12) <= w_data;
+			end if;
+			if en(11) = '1' then
+				r_next(11) <= w_data;
+			end if;
+			if en(10) = '1' then
+				r_next(10) <= w_data;
+			end if;
+			if en(9) = '1' then
+				r_next(9) <= w_data;
+			end if;
+			if en(8) = '1' then
+				r_next(8) <= w_data;
+			end if;
+			if en(7) = '1' then
+				r_next(7) <= w_data;
+			end if;
+			if en(6) = '1' then
+				r_next(6) <= w_data;
+			end if;
+			if en(5) = '1' then
+				r_next(5) <= w_data;
+			end if;
+			if en(4) = '1' then
+				r_next(4) <= w_data;
+			end if;
+			if en(3) = '1' then
+				r_next(3) <= w_data;
+			end if;
+			if en(2) = '1' then
+				r_next(2) <= w_data;
+			end if;
+			if en(1) = '1' then
+				r_next(1) <= w_data;
+			end if;
+			if en(0) = '1' then
+				r_next(0) <= w_data;
+			end if;
+		end process;
+	--read	
+		with r_address select 
+			r_data <= r_reg(0) when r_address = "0000",
+						 r_reg(1) when r_address = "0001",
+						 r_reg(2) when r_address = "0010",
+						 r_reg(3) when r_address = "0011",
+						 r_reg(4) when r_address = "0100",
+						 r_reg(5) when r_address = "0101",
+						 r_reg(6) when r_address = "0110",
+						 r_reg(7) when r_address = "0111",
+						 r_reg(8) when r_address = "1000",
+						 r_reg(9) when r_address = "1001",
+						 r_reg(10) when r_address = "1010",
+						 r_reg(11) when r_address = "1011",
+						 r_reg(12) when r_address = "1100",
+						 r_reg(13) when r_address = "1101",
+						 r_reg(14) when r_address = "1110",
+						 r_reg(15) when r_address = "1111",
+end behavioral;
+	

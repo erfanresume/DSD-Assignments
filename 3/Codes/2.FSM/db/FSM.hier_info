@@ -1,0 +1,25 @@
+|FSM
+clk => y1~reg0.CLK
+clk => state_reg[0].CLK
+clk => state_reg[1].CLK
+clk => state_reg[2].CLK
+clk => state_reg[3].CLK
+reset => y1~reg0.ACLR
+reset => state_reg[0].ACLR
+reset => state_reg[1].ACLR
+reset => state_reg[2].ACLR
+reset => state_reg[3].ACLR
+a => state_next.OUTPUTSELECT
+a => state_next.OUTPUTSELECT
+a => y0.IN1
+a => Mux1.IN14
+b => state_next.DATAB
+b => y0.IN1
+b => state_next.DATAB
+c => Mux0.IN15
+c => Mux1.IN15
+y0 << y0.DB_MAX_OUTPUT_PORT_TYPE
+y1 << y1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y2 << Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+

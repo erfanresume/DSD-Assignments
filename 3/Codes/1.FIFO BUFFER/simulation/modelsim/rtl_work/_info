@@ -1,0 +1,190 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\installed program\Quartus II\quartus\bin\Altera_SRC\FIFO BUFFER\simulation\modelsim
+Eandgate
+Z1 w1686683183
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dF:\installed program\Quartus II\quartus\bin\Altera_SRC\FIFO BUFFER\simulation\modelsim
+Z6 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/andgate.vhd
+Z7 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/andgate.vhd
+l0
+L5
+VG0U<HzE4WiGH4@kGAoH@a1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1686863405.541000
+Z10 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/andgate.vhd|
+Z11 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/andgate.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 <YZCRK>A<^2=05aDnkGO_0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 andgate 0 22 G0U<HzE4WiGH4@kGAoH@a1
+l15
+L13
+Vk48bzIPfeYoA16SaF[i970
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 h<CM7fX=eGG_R>Za3Oze22
+!i10b 1
+Econtroller
+Z14 w1686680817
+R2
+R3
+R4
+R5
+Z15 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/controller.vhd
+Z16 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/controller.vhd
+l0
+L5
+VfK6L4HGl4<m[nSgATZ`>]1
+R8
+31
+Z17 !s108 1686863405.401000
+Z18 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/controller.vhd|
+Z19 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/controller.vhd|
+R12
+R13
+!s100 6OIFO@g[Z1I82:07KY7NI3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 10 controller 0 22 fK6L4HGl4<m[nSgATZ`>]1
+l18
+L15
+VcQE8[`?F;hIFV=7Gige<c2
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 G0E>NY`AffEmHk?0mf6702
+!i10b 1
+Efifo
+Z20 w1686684307
+R2
+R3
+R4
+R5
+Z21 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/fifo.vhd
+Z22 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/fifo.vhd
+l0
+L5
+V8lNh77^e9hdmIQ;hiVFiL1
+R8
+31
+Z23 !s108 1686863404.995000
+Z24 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/fifo.vhd|
+Z25 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/fifo.vhd|
+R12
+R13
+!s100 LURlUdXlmX[XC?[NDl:WN2
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 4 fifo 0 22 8lNh77^e9hdmIQ;hiVFiL1
+l52
+L15
+VOVhBGlX3bL6PjI8Q1S3i53
+R8
+31
+R23
+R24
+R25
+R12
+R13
+!s100 mELFlG@5MPB?ZS:cQ]VEm1
+!i10b 1
+Ereg_file
+Z26 w1686686275
+R2
+R3
+R4
+R5
+Z27 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/reg_file.vhd
+Z28 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/reg_file.vhd
+l0
+L5
+VK`V@_1<Ao2G@DRT@R[[L]2
+R8
+31
+Z29 !s108 1686863405.198000
+Z30 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/reg_file.vhd|
+Z31 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/reg_file.vhd|
+R12
+R13
+!s100 Q>Z?A=0mbG@T3]XJCe8Zf2
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 8 reg_file 0 22 K`V@_1<Ao2G@DRT@R[[L]2
+l21
+L16
+V5g20TjKIXmmI7IaZ<m6XN1
+R8
+31
+R29
+R30
+R31
+R12
+R13
+!s100 nKCPK]F2CnlE]Om1o9Iz83
+!i10b 1
+Etb_fifo
+Z32 w1686683064
+R2
+R3
+R4
+R5
+Z33 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/tb_fifo.vhd
+Z34 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/tb_fifo.vhd
+l0
+L6
+VZYzS9<DzP>UMF@ek69YXC1
+!s100 G@4RD`>0;UX1@X@RMVfQW2
+R8
+31
+!i10b 1
+Z35 !s108 1686863405.729000
+Z36 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/tb_fifo.vhd|
+Z37 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/FIFO BUFFER/tb_fifo.vhd|
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 tb_fifo 0 22 ZYzS9<DzP>UMF@ek69YXC1
+l31
+L10
+V1SVTL_j52:O@Z`_L0N2CL0
+!s100 o@`?J38jn4XBHD]k<5;fY1
+R8
+31
+!i10b 1
+R35
+R36
+R37
+R12
+R13

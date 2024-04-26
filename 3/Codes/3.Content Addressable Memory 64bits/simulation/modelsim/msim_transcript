@@ -1,0 +1,72 @@
+# Reading F:/installed program/Model Sim/modelsim_ase/tcl/vsim/pref.tcl 
+# do cam_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying F:\installed program\Model Sim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied F:\installed program\Model Sim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/reg_file.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_file
+# -- Compiling architecture behavioral of reg_file
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/controller.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controller
+# -- Compiling architecture behavioral of controller
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/cam.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cam
+# -- Compiling architecture behavioral of cam
+# 
+# vcom -93 -work work {F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_cam
+# -- Compiling architecture behavioral of tb_cam
+# ** Warning: [4] F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd(54): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd(77): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd(85): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd(89): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd(93): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd(96): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb_cam
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_cam 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_cam(behavioral)
+# Loading work.cam(behavioral)
+# Loading work.controller(behavioral)
+# Loading work.reg_file(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Break in Process line__22 at F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/reg_file.vhd line 22

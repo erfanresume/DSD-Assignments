@@ -1,0 +1,63 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity cam is
+	port (
+			clk,reset: in std_logic;
+			w_en: in std_logic;
+			key_in: in std_logic_vector(31 downto 0);
+			w_data: in std_logic_vector(63 downto 0);
+			hit: out std_logic;
+			r_data: out std_logic_vector(63 downto 0)
+		  );
+end cam;
+
+architecture behavioral of cam is
+
+--register
+component reg_file is
+	port(
+			clk,reset,w_en: in std_logic;
+			w_address: in std_logic_vector(3 downto 0);
+			r_address: in std_logic_vector(3 downto 0);
+			w_data: in std_logic_vector(63 downto 0);
+			r_data: out std_logic_vector(63 downto 0)
+		 );
+end component;
+
+--controller
+component controller is	
+	port(
+			clk,reset,w_en: in std_logic;
+			key_in: in std_logic_vector(31 downto 0);
+			address_out: out std_logic_vector(3 downto 0);--we have 16 data in our register and memory witch could show it with 4 bits
+			hit: out std_logic
+	);
+end component;
+
+	signal address_out: std_logic_vector(3 downto 0);
+	--signal w_en: std_logic;
+	--signal key_in_cam: std_logic_vector(31 downto 0);
+	
+begin
+	cam_controller: controller port map(
+											  clk => clk,
+											  reset => reset,
+											  w_en => w_en,
+											  key_in => key_in,
+											  address_out => address_out,
+											  hit => hit
+											 );
+	
+	registerfile: reg_file port map(
+											  clk => clk,
+											  reset => reset,
+											  w_en => w_en,
+											  w_address => address_out,
+											  r_address => address_out,
+											  r_data => r_data,
+											  w_data => w_data
+											 );
+	--key_in <= key_in_cam;
+end behavioral;

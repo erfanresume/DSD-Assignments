@@ -1,0 +1,151 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\installed program\Quartus II\quartus\bin\Altera_SRC\Content Addressable Memory 64bits\simulation\modelsim
+Ecam
+Z1 w1686755885
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dF:\installed program\Quartus II\quartus\bin\Altera_SRC\Content Addressable Memory 64bits\simulation\modelsim
+Z6 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/cam.vhd
+Z7 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/cam.vhd
+l0
+L5
+V3<JRG<o9nnZjebcGT8R]C1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1686865619.132000
+Z10 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/cam.vhd|
+Z11 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/cam.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 g1V<D2T1H_C8XE<2JTWBg3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 3 cam 0 22 3<JRG<o9nnZjebcGT8R]C1
+l43
+L16
+V28?^TAlS;H53>Rb:;W=j21
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 =3J3P`25g62=47PkQE1?D2
+!i10b 1
+Econtroller
+Z14 w1686774646
+R2
+R3
+R4
+R5
+Z15 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/controller.vhd
+Z16 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/controller.vhd
+l0
+L5
+V6JLgV=hd0AWikGgM;R4K03
+R8
+31
+Z17 !s108 1686865618.941000
+Z18 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/controller.vhd|
+Z19 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/controller.vhd|
+R12
+R13
+!s100 7>QZch<eH?AQQoALYT=1m2
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 10 controller 0 22 6JLgV=hd0AWikGgM;R4K03
+l24
+L14
+VkccQI2^=c=FhIBCh:_lVV2
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 zBFz0GeV`ZZla;ARH_TfG0
+!i10b 1
+Ereg_file
+Z20 w1686755524
+R3
+R4
+R5
+Z21 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/reg_file.vhd
+Z22 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/reg_file.vhd
+l0
+L5
+V0`lezaVV5ZMBk:0gCk3ki1
+R8
+31
+Z23 !s108 1686865618.738000
+Z24 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/reg_file.vhd|
+Z25 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/reg_file.vhd|
+R12
+R13
+!s100 8e^<?iSoFlV8hJY_<=07=3
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 8 reg_file 0 22 0`lezaVV5ZMBk:0gCk3ki1
+l21
+L15
+VZ];ChM=gRK5@X:0WhhF9V2
+R8
+31
+R23
+R24
+R25
+R12
+R13
+!s100 =TI^=dmOOP<AW@S`^`0Dz3
+!i10b 1
+Etb_cam
+Z26 w1686865577
+R2
+R3
+R4
+R5
+Z27 8F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd
+Z28 FF:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd
+l0
+L6
+VG_7NF3ZN4mf1AbKQgYGE;1
+!s100 P4;cVeBi:PNFSKVX:1GI20
+R8
+31
+!i10b 1
+Z29 !s108 1686865619.280000
+Z30 !s90 -reportprogress|300|-93|-work|work|F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd|
+Z31 !s107 F:/installed program/Quartus II/quartus/bin/Altera_SRC/Content Addressable Memory 64bits/tb_cam.vhd|
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 6 tb_cam 0 22 G_7NF3ZN4mf1AbKQgYGE;1
+l33
+L10
+Vgl`WIbUI1k::fXJEDIfQU0
+!s100 ^BobYN]JLk<k2VLQ@Pb]11
+R8
+31
+!i10b 1
+R29
+R30
+R31
+R12
+R13

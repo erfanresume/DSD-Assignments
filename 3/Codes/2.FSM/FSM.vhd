@@ -1,0 +1,84 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity FSM is 
+	port(
+			clk,reset: in std_logic;
+			a,b,c: in std_logic;
+			y0,y1,y2: out std_logic --y1 is moore output and y0 and y2 is mealy output
+		);
+end FSM;
+
+architecture behavioral of FSM is
+	constant s0: std_logic_vector(3 downto 0):="0000";
+	constant s1: std_logic_vector(3 downto 0):="0001";
+	constant s2: std_logic_vector(3 downto 0):="0010";
+	constant s3: std_logic_vector(3 downto 0):="0011";
+	signal state_next,state_reg: std_logic_vector(3 downto 0);
+	signal y1_next: std_logic;
+	
+begin
+	--State register and buffer for moore output glitch
+			process(clk,reset)
+				begin
+					if (reset = '1') then
+						state_reg <= s0;
+						y1 <= '0';
+					elsif (clk' event and clk = '1') then
+						state_reg <= state_next;
+						y1 <= y1_next;
+					end if;
+			end process;
+   --Next state logic
+			process(a,b,c,state_reg)
+			begin 
+				case state_reg is
+					when s0 =>
+						if a = '1' then
+							if b = '1' then 
+								state_next <= s2;
+							else 
+								state_next <= s1;
+							end if;
+						else 
+							state_next <= s0;
+						end if;
+					when s1 =>
+						if a = '1' then
+							state_next <= s0;
+						else 
+							state_next <= s1;
+						end if;
+					when s2 =>
+						if c = '1' then 
+							state_next <= s3;
+						else 
+							state_next <= s0;
+						end if;
+					when s3 => 
+						state_next <= s0;
+					when others => 
+						state_next <= s0;
+			   end case;
+			end process;
+	--Mealy output logic
+		y0 <= '1' when state_reg = s0 and a = '1' and b = '1' else
+				'0';
+		y2 <= '1' when state_reg = s3 else
+				'0';
+	--Moore output logic
+		process(a,b,c,state_next)
+		begin
+		y1_next <= '0';
+			case state_next is 
+				when s0 => 
+					y1_next <= '1';
+				when s1 =>
+					y1_next <= '1';
+				when s2 =>
+				when s3 =>
+				when others => 
+			end case;
+		end process;
+end behavioral;	
